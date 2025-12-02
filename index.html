@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="App">
+      <div class="home">
+        <div class='rules_modal'>
+          <div class="rules_modal_box">
+        <h1>RULES</h1>
+        <img src="images/image-rules.svg" alt="" />
+        <img src="images/icon-close.svg" alt="" id='close_modal'  />
+        </div>
+      </div>
+        <div class="score_board">
+          <div class="titles">
+            <h2>ROCK</h2>
+            <h2>PAPER</h2>
+            <h2>SCISSORS</h2>
+          </div>
+          <div class="score_box">
+            <h4>SCORE</h4>
+            <h1 id="score">0</h1>
+          </div>
+        </div>
+
+        <!-- Pick -->
+        <div class="pick">
+          <img src="./images/bg-triangle.svg" id="triangle" alt="" />
+          <div class="tt">
+            <div class="circle paper">
+              <img src="./images/icon-paper.svg" alt="" />
+            </div>
+            <div class="circle scissors">
+              <img src="images/icon-scissors.svg" alt="" />
+            </div>
+          </div>
+          <div class="circle rock">
+            <img src="./images/icon-rock.svg" alt="" />
+          </div>
+        </div>
+        <!-- End Pick -->
+        <!-- Lobby -->
+        <div class="lobby">
+          <div class="picks_selected">
+            <div class="your_pick">
+              <div class="circle my_pick_circle">
+                <img src="./images/icon-paper.svg" alt="" id="your_pick" />
+              </div>
+              <h4 >YOUR PICK</h4>
+            </div>
+            <div class="result res_desktop">
+              <h1 class="res">t</h1>
+              <button id="play_again">PLAY AGAIN</button>
+            </div>
+            <div class="house_pick">
+              <div class="circle house_pick_circle">
+                <img src="./images/icon-rock.svg" id="house_pick" alt="" />
+              </div>
+              <h4>THE HOUSE PICKED</h4>
+            </div>
+          </div>
+          <div class="result res_mobile">
+            <h1 class="res">DRAW</h1>
+            <button>PLAY AGAIN</button>
+          </div>
+        </div>
+
+        <!-- End Lobby -->
+
+        <button class="rules">RULES</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
